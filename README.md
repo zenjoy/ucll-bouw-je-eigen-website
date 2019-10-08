@@ -61,3 +61,21 @@ https://www.google.com/intl/nl/chrome/
 
 Github Desktop  
 https://desktop.github.com/
+
+# Frameworks
+
+## Bootstrap 4
+
+Download  
+https://getbootstrap.com/docs/4.3/getting-started/download/
+
+Documentatie  
+https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+## ZURB Foundation
+
+Download  
+https://foundation.zurb.com/sites/download.html/
+
+Documentatie  
+https://foundation.zurb.com/sites/docs/
