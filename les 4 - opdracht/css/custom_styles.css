@@ -47,13 +47,14 @@ nav.top-nav a:hover {
   padding-top: 90px;
 }
 
-.carousel-inner,
+.carousel,
 .carousel-item {
-  min-height: 350px;
+  height: 350px;
 }
 
 .carousel img {
   object-fit: cover;
+  height: 100%;
 }
 
 .content-section {
