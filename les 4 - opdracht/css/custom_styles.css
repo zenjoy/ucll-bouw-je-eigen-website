@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav.top-nav a {
+  color: purple;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-out;
+}
+
+nav.top-nav a:hover {
+  color: #fff;
+  background-color: purple;
+  text-decoration: none;
+}
+
+#main {
+  padding-top: 90px;
+}
+
+.carousel-inner,
+.carousel-item {
+  min-height: 350px;
+}
+
+.carousel img {
+  object-fit: cover;
+}
+
+.content-section {
+  padding: 80px 0;
+}
+
+.section-alt-color {
+  background-color: purple;
+}
+
+.slide-text-wrapper {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.card-deck .card.custom-card {
+  min-width: 320px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: purple;
+}
+
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid purple;
+  color: purple;
+}
+
+footer {
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 0.8em;
+  background-color: #540054;
+}
+
+footer a {
+  color: #fff;
+}
