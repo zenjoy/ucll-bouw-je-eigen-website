@@ -1,0 +1,20 @@
+/* Hier komen de custom selectors en styles */
+
+/* Google font-import */
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+
+.header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav a {
+  color: purple;
+  padding: 20px;
+}
+
+.top-nav a:hover {
+  background-color: purple;
+  color: #fff;
+}
