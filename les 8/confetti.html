@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Optional meta tags -->
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="URL" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta http-equiv="x-dns-prefetch-control" content="off" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="/css/bootstrap.min.css"
+      type="text/css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/styles.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <!-- Page title -->
+    <title>UCLL - Les 8 - Jquery Praktisch</title>
+  </head>
+  <body id="confetti">
+    <button type="button" id="party">🎉</button>
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Let's use https://www.kirilv.com/canvas-confetti/ -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.4.0/dist/confetti.browser.min.js"></script>
+    <script>
+      // definieren van functie met de naam "feest"
+      function feest() {
+        // voorbeeld van https://www.kirilv.com/canvas-confetti/#fireworks
+        var end = Date.now() + 15 * 1000;
+
+        var interval = setInterval(function() {
+          if (Date.now() > end) {
+            return clearInterval(interval);
+          }
+
+          confetti({
+            startVelocity: 30,
+            spread: 360,
+            ticks: 60,
+            shapes: ["square"],
+            origin: {
+              x: Math.random(),
+              // since they fall down, start a bit higher than random
+              y: Math.random() - 0.2
+            }
+          });
+        }, 200);
+      }
+      // wachten tot DOM zichbaar is
+      $(document).ready(function() {
+        // bij elke klik op element met ID "party" ...
+        $("#party").on("click", function() {
+          // ... roepen we de functie "feest" aan.
+          feest();
+        });
+      });
+    </script>
+  </body>
+</html>
